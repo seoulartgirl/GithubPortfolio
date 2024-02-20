@@ -1,0 +1,68 @@
+#
+#4개 정수 입력 받아 합계와 평균 출력
+
+#code1 - 원시적 방법
+# num1 = int(input('숫자1:'))
+# num2 = int(input('숫자2:'))
+# num3 = int(input('숫자3:'))
+# num4 = int(input('숫자4:'))
+#
+# total = num1 + num2 + num3 + num4
+
+#code2 - for 함수 사용
+# n=4
+# total = 0
+# for i in range(n):
+#     num = int(input(f'{i+1}숫자입력:'))
+#     total += num
+# avg = total/4
+# print(f'합계:{total}, 평균:{avg}')
+#
+# n=4
+# total = 0
+# num_list = [] #리스트 생성해줌
+# for i in range(n):
+#     num = int(input(f'{i+1}숫자입력:'))
+#     num_list.append(num) #append 붙이다
+#     total += num
+# avg = total/4
+# print(f'합계:{total}, 평균:{avg}')
+# print(num_list)
+
+
+lists=[1,2,3,[1,2]]
+print(lists)
+print(lists[0])
+
+# 리스트 생성 : [] 대괄호 사용하거나 list() 함수 사용
+# 리스트 요소 추가 : append()
+# 리스트 길이 : len(list)
+
+aList =list()
+for i in range(10):
+    print(aList)
+    aList.append(0)
+print(aList)
+
+#for와 list
+total = 0
+num_list =[]
+#리스트에 입력한 데이터 저장
+for i in range(4):
+    num = int(input(f'{i+1}숫자입력:'))
+    num_list.append(num)
+
+#리스트 데이터를 이용해 계산
+for num in num_list:
+    total += num
+
+avg = total/4
+print(f'합계:{total}, 평균:{avg}')
+print(num_list)
+
+#리스트의 요소 출력
+for i in range(len(num_list)):
+    print(num_list)
+
+for x in num_list:
+    print(x)

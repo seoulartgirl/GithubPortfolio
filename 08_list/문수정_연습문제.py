@@ -45,17 +45,51 @@ print('{1},{0}'.format(text[-3], text[:4]))
 #문제2.
 print('{0:>10s}'.format('python'))
 
+#정답:     python
+#10자리에서 오른쪽으로 출력 됨
+
 #문제3.
 str1 = 'this is'
 str2 = 'PythON'
 print(str1.title() + ' ' + str2.upper())
 
-문제4:
+#정답: This Is PYTHON
+#풀이: 제목화, 대문자화
+
+#문제4:
+#code1 - replace 함수 사용
 sen = 'I like cooking!'
+sen = sen.replace('o', '$')
+print(sen)
+
+#code2 -replace 함수 사용 X
+sen = input('문자열을 입력하세요:')
+temp =''
+for ch in sen:
+    if ch == 'o':
+        temp += '$'
+    else:
+        temp += ch
+print(temp)
 
 #결과: I like c$$king!
 
-문제5:
+#문제5: 날짜 10년 뒤로 출력
 #결과: 2022/01/01 -> 2032년 1월 1일
+from datetime import date, timedelta
 
-문제6:
+targetdate = date(2022, 1, 1)
+tenyears = targetdate + timedelta(days=365*10)
+print(tenyears)
+#2031-12-30
+
+#문제6: 숫자 입력하는 만큼 하트 출력하기
+heart = '\u2665'
+nums = input('숫자를 여러개 입력하세요:')
+for i in nums:
+    print(heart*int(i))
+
+#결과: 123 입력시
+# ♥
+# ♥♥
+# ♥♥♥

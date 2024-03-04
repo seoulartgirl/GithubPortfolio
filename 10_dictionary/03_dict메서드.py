@@ -37,11 +37,10 @@ result = d.pop('two')
 print(result) #결과: 2
 print(d)  #결과: {'one': 1, 'six': 6, 'ten': 10}
 
-#4. copy() : d 딕셔너리를 d2에 복사
+#4. copy() : d 딕셔너리를 d2에 복사 / id 값은 다름
 d2 = d.copy()
 print(d, id(d)) #결과: {'one': 1, 'six': 6, 'ten': 10} 4296866432
 print(d2, id(d2)) #결과: {'one': 1, 'six': 6, 'ten': 10} 4296867520
-
 d2['four'] = 4
 print(d) #결과: {'one': 1, 'six': 6, 'ten': 10}
 print(d2) #결과: {'one': 1, 'six': 6, 'ten': 10, 'four': 4}

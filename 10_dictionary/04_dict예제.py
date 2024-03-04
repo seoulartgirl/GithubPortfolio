@@ -1,6 +1,6 @@
-#in 연산자
-
+#in / not in 연산자
 #딕셔너리에서는 key가 있는지 확인하는 형태로 사용
+
 d = {'nine':9, 'ten':10}
 print('two' in d) #False 나옴
 print('two' not in d) #True 나옴

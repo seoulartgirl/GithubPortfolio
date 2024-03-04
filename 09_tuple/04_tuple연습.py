@@ -14,3 +14,14 @@ for t1 in t:
 #결과: (1, 2, 3)
 # (4, 5, 6)
 # (7, 8, 9)
+
+# print(t[0][1])
+
+for r in range(len(t)):
+    for c in range(len(t[r])):
+        print(t[r][c], end=' ')
+    print()
+
+for i in range(len(t)):
+    lt1,lt2,lt3=t[i]
+    print(lt1,lt2,lt3)

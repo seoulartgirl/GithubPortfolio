@@ -15,7 +15,7 @@ print(d2)
 #key의 순서는 의미가 없으나 생성된 순서대로 구성
 #key와 value는 사용자가 지정함, 규정이 없다
 #key는 숫자, 문자열 다 가능하나 유일하게* 구별되어야 함
-#value는 중복 가능
+#key 중복되면 안됨 value는 중복 가능
 
 
 #2. 딕셔너리 요소 접근: key를 사용
@@ -58,5 +58,5 @@ print(d4['name']) #결과: ['kim', 'hong', 'lee']
 # 7. 요소 삭제: del(딕셔너리[키])
 del(d4['gender'])
 print(d4)
-#결과: {'name': ['kim', 'hong', 'lee'], 'score': [100, 90, 80]}
+#결과: {'name': ['kim', 'hong', 'lee'], 'score': [100, 90, 80], 'phone': ('123-234', '123-9092')}
 

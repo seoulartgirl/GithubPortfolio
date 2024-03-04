@@ -1,3 +1,4 @@
+'''
 #다음 코드의 실행 결과를 쓰시오
 #1-1
 a = [0, 1, 2, 3, 4]
@@ -30,7 +31,7 @@ list_b = list_a.sort()
 print(list_a, list_b)
 
 #결과: [3,2,1,4] None
-#풀이: list.sort()는 목록을 제자리에서 정렬하고 반환.
+#풀이: list.sort()는 목록을 제자리에서 정렬하고 반환 값이 없어서 None
 
 list_a = [3, 2, 1, 4]
 list_b= sorted(list_a)
@@ -76,7 +77,7 @@ print('g' in b, len(b))
 
 #결과: False 6
 #풀이: a= [1,2,3,5,'g']
-#b = ['a', 'b', 'c','d','e',6]
+#b = ['a','b','c','d','e',6]
 
 
 #1-7
@@ -125,7 +126,8 @@ week1 = ["Mon", "Tue", "Wed"]
 week2 = ["Thu", "Fri", "Sat", "Sun"]
 week3 = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 print(week3[:len(week2) + 2])
-#결과:['Mon', 'Tue', 'Wed', 'Thu', 'Fri’, ’Sat’]
+#결과: week1 + week2
+#결과:['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat’', sun]
 
 #정답: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 #풀이: week3[:4+2] / week3[:6]
@@ -139,6 +141,7 @@ name_list = []
 for i in range(3):
     name = input(f'회원{i+1} 이름 입력:')
     name_list.append(name)
+    #name_list(append(input(f'회원{i+1} 이름 입력:'))) -> 이렇게 해도 됨
 print(name_list)
 
 
@@ -178,7 +181,7 @@ while True:
     entry = input(f'상품{i+1} 등록(엔터키 누르면 종료):')
     pr_list.append(entry)
     i += 1
-    if not entry:
+    if not entry: #if item == '' 엔터키 누르면
         break
 print(f'등록된 상품:{pr_list}')
 
@@ -195,7 +198,7 @@ while True:
         break
 print(f'등록된 상품: {totentry}')
 
-
+'''
 
 #4-4 4-2 문제에서 학생들의 점수를 내림차순으로 정렬하여 출력하는 코드를 추가하여 작성하시오.
 #결과: 점수 내림차순 정렬 : [91,82,78,77,69]
@@ -213,6 +216,11 @@ sents= ["잘못을 고치고 옳은 길에 들어섬", "죽일 고비를 여러 
        "고통과 즐거움을 함께 한다", "미리 준비해두면 근심 걱정이 없다",\
         "사회적으로 인정받고 출세하여 이름을 세상에 드날림", "다른 사람의 학식이나 업적이 크게 진보한 것을 말함",\
         "생사를 같이 할 수 있는 친밀한 벗", "상대 없이 혼자서는 어떤 일을 이룰 수 없다"]
+
+#리스트 두개 끼리끼리 묶는법
+print(list(zip(words, sents))) #리스트
+print(dict(zip(words, sents))) #딕셔너리
+print({'사자성어': words, '뜻': sents}) #딕셔너리
 
 print('사자성어 맞추기 게임을 시작합니다')
 print('-------------------------')

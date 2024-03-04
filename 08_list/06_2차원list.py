@@ -22,8 +22,9 @@ for row in table: #[1,2,3,4]
 # 10 11 12 14
 #요소의 값을 바로 추출
 
-row_n = len(table)
-col_n = len(table[0])
+table = [[1,2,3,4],[7,8,9,10],[10,11,12,14]]
+row_n = len(table) #3
+col_n = len(table[0]) #4
 
 for r in range(row_n):
     for c in range(col_n):
@@ -42,13 +43,24 @@ stud = [[90,85,70],[88,79,92],[100,100,100],[90,60,70]]
 print('---성적표 (점수)---')
 for row in stud:
     print(row)
+    #결과:
+    # [90, 85, 70]
+    # [88, 79, 92]
+    # [100, 100, 100]
+    # [90, 60, 70]
 
-print('---성적표 (점수, 총점, 평균)---')
+# print('---성적표 (점수, 총점, 평균)---')
 for row in stud:
     total = sum(row)
     avg = total / len(row)
 #print(f'{row}, {total}, {avg:.2f}') -> 마지막꺼만 출력됨 / 줄 간격 조심하기
     print(f'{row}, {total}, {avg:.1f}')
+
+# 결과:
+# [90, 85, 70], 245, 81.7
+# [88, 79, 92], 259, 86.3
+# [100, 100, 100], 300, 100.0
+# [90, 60, 70], 220, 73.3
 
 #code2
 print('---성적표 (점수, 총점, 평균)---')
@@ -58,3 +70,9 @@ for row in stud:
         total += score
     avg = total / len(row)
     print('{0}, {1}, {2:.1f}'.format(row, total, avg))
+
+    # 결과:
+    # [90, 85, 70], 245, 81.7
+    # [88, 79, 92], 259, 86.3
+    # [100, 100, 100], 300, 100.0
+    # [90, 60, 70], 220, 73.3

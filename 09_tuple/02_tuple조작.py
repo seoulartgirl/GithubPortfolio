@@ -40,11 +40,12 @@ print(len(t4))
 #TypeError: 'tuple' object does not support item assignment
 
 #t5.append() append 사용불가
-#del(t5[0]) del 사용불가 -> 튜플은 데이터 값 할당/변경 불가
 
+#del(t5[0]) del 사용불가 -> 튜플은 데이터 값 할당/변경 불가
 #튜플 자체를 제거하는 것은 가능함. 단, 튜플 요소는 변경 불가.
-#요소를 꼭 바꿔야 하면 -> list로 바꿨다가 -> tuple로 다시 바꾸기
 del(t5)
+
+#요소를 꼭 바꿔야 하면 -> list로 바꿨다가 -> tuple로 다시 바꾸기
 
 #7. 튜플 요소 검색: index(), count()
 t6 = tuple('hello hi how are you')

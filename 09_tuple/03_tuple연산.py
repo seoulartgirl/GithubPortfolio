@@ -35,4 +35,5 @@ print(a,b,c)
 
 # *a, *b, c = t2 -> SyntaxError 문법오류. 각자 몇개씩 할당할지 모름
 # print(a,b,c)
+# SyntaxError: multiple starred expressions in assignment
 

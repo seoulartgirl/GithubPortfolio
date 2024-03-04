@@ -20,7 +20,12 @@ ylist = [x+y for x in range(1,11) for y in range(10,21)]
 print(ylist, len(ylist))
 #110개 x=10개 y= 11개
 
+foodList = [(x,y) for x in ['밥','국수','짜장면'] for y in ['김치','단무지']]
+print(foodList)
+#결과: [('밥', '김치'), ('밥', '단무지'), ('국수', '김치'), ('국수', '단무지'), ('짜장면', '김치'), ('짜장면', '단무지')]
+
 #세트 컴프리헨션
+print([x+y for x in range(1,5) for y in range(10,15)])
 yset = {x+y for x in range(1,5) for y in range(10,15)}
 print(yset, '\n' , len(yset))
 #결과: {11, 12, 13, 14, 15, 16, 17, 18} / 8

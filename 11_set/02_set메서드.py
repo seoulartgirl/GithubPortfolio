@@ -16,6 +16,7 @@ print(s)
 
 #2. 데이터 삭제, 추출
 #pop()
+
 result=s.pop()
 print(result) #1
 print(s) #{3, 100, 4, 5, 6, 10}
@@ -34,7 +35,7 @@ print(s)
 #결과: {3, 100, 4, 5, 11, 12, 13, 14}
 
 s.discard(16) #16이 없는 경우는 그냥 넘어감
-print(s.discard(16)) #None타입
+print(s.discard(16)) #None 반환
 #삭제하려는 값이 없는 경우 None 타입
 print(s)
 #결과: {3, 100, 4, 5, 11, 12, 13, 14} (위랑 똑같음)

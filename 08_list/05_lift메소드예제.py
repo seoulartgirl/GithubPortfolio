@@ -6,15 +6,15 @@
 # 회원 입력: 성춘향
 # 회원 명단: ---
 
-#code1
-name1 = input('회원 입력:')
-name2 = input('회원 입력:')
-name3 = input('회원 입력:')
-name = []
-name.append(name1)
-name.append(name2)
-name.append(name3)
-print(name)
+#code1 - 원시적 방법
+# name1 = input('회원 입력:')
+# name2 = input('회원 입력:')
+# name3 = input('회원 입력:')
+# name = []
+# name.append(name1)
+# name.append(name2)
+# name.append(name3)
+# print(name)
 
 #code2
 name_list = []
@@ -23,16 +23,7 @@ for i in range(3):
     name_list.append(name)
 print(name_list)
 
-
 #code3
-name_list = []
-while i>3:
-    name = input(f'회원{i+1} 입력:')
-    name_list.append(name)
-
-print(name_list)
-
-#code4
 name_list = []
 #i = 0
 while True:
@@ -41,14 +32,17 @@ while True:
         break
     else:
         name_list.append(name)
-
 print(name_list)
 
-# 회원 명단 출력
-#홍길동, 이몽룡, 성춘향
-print(name_list)
+
+# 회원 명단 출력 - 홍길동, 이몽룡, 성춘향 / hong, lee, sung
+print(name_list) #hong, lee, sung
 for name in name_list:
     print(name)
+    #결과:
+    #hong
+    #lee
+    #sung
 
 #2) 문제2: 5명 점수 입력받아 리스트 추가, 총점, 평균 계산 후 출력
 
@@ -73,7 +67,6 @@ for i in range(5):
     scores.append(score)
 for score in scores:
     total += score
-
 avg = total / len(scores)
 print(f'총점: {total}')
 print(f'평균: {avg:.2f}')

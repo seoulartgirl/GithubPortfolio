@@ -1,7 +1,7 @@
 #상속: 부모클래스로부터 상속받은 필드와 메소드를 이용하거나 추가, 변경하여 활용(재사용)
 #메서드 재정의(overriding) : 상속받은 메서드를 다시 정의
 
-class Car:
+class Car(object):
     def __init__(self, speed=0, color=''):
         self.speed = speed
         self.color = color
@@ -30,3 +30,8 @@ truck1.drive() #결과: 0로 5양의 짐을 싣고 주행한다
 
 for car in [car1, truck1, truck2, truck3]:
     car.drive()
+# 결과:
+# 0로 주행한다
+# 0로 5양의 짐을 싣고 주행한다
+# 0로 10양의 짐을 싣고 주행한다
+# 0로 5양의 짐을 싣고 주행한다

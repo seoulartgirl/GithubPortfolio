@@ -9,7 +9,7 @@ class Calc:
         print(a+b)
 
     @staticmethod
-    def add(a,b):
+    def sub(a,b):
         print(a-b)
 
 # myCal = Calc()

@@ -17,10 +17,10 @@ class Person:
             return p
 
 kim = Person()
-Person.print_count()
+Person.print_count() #결과: 1명 태어났어요
 
 choi = Person()
-Person.print_count()
+Person.print_count() #결과: 2명 태어났어요
 
-lee = Person() #
-Person.print_count()
+lee = Person() #클래스 메서드로 인스턴스 생성
+Person.print_count() #결과: 3명 태어났어요

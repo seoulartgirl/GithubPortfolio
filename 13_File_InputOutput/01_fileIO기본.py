@@ -13,7 +13,6 @@
 #읽기: 텍스트 파일 -> read(), readline(), readlines()
 #쓰기: 텍스트 파일 -> write(), writelines()
 
-
 #3단계: 파일 닫기(close())
 #파일객체.close()
 

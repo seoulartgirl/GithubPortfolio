@@ -15,15 +15,15 @@ print("After:", x)
 
 
 #문제1-2:다음 코드의 실행 결과를 쓰시오.
-def sotring_function(list_value):
+def sorting_function(list_value):
     return list_value.sort()
-print(sotring_function([5,4,3,2,1]))
+print(sorting_function([5,4,3,2,1]))
 
 #결과: None
 
-def sotring_function(list_value):
+def sorting_function(list_value):
     return sorted(list_value)
-print(sotring_function([5,4,3,2,1]))
+print(sorting_function([5,4,3,2,1]))
 
 
 #문제1-3:다음 코드의 실행 결과를 쓰시오.
@@ -38,8 +38,9 @@ def midterm(number):
         result = False
 
     return result
+print(midterm(number))
 
-#결과:
+#결과: 아무것도 출력되지 않음
 #False는 불린 타입인데 문자열("")로 정의되어 있어서?
 
 
@@ -113,14 +114,15 @@ def test(x,y):
     tmp = x
     x = y
     y = tmp
+    print('x', x, 'y', y)
     return y.append(x)
 
 x = ["y"]
 y = ["x"]
-print(test(x,y))
+test(x,y)
 print(y)
 
-#결과: ["x"] / ?
+#결과: ["x"] / 지역변수 전역변수
 
 #문제1-11:다음 코드의 실행 결과를 쓰시오.
 def countdown(n):
@@ -236,6 +238,7 @@ country.append("Remove")
 print(country.remove("Remove"))
 
 #결과 : None
+
 
 #문제2: 다음 코드를 실행하면 결과값으로 120이 나온다. 빈칸에 들어갈 알맞은 코드를 작성하시오.
 def factorial_calculator(n):

@@ -28,6 +28,9 @@ print(isinstance(d, float)) #결과: True
 
 
 #예. 자동차 클래스 선언
+#필드(변수)
+#메서드 정의
+#self : 기존의 함수와 구분, 자신의 객체(인스턴스)임을 의미
 class Car:
     pass
 
@@ -45,9 +48,6 @@ class Car:
     def drive(self):
         self.speed = 10
 
-#필드(변수)
-#메서드 정의
-#self : 기존의 함수와 구분, 자신의 객체(인스턴스)임을 의미
 
 #인스턴스 생성
 car1 = Car() #Car() : 인스턴스 생성하는 생성자 함수 (메소드)
@@ -64,7 +64,7 @@ print(car2.speed) #결과: 0
 print(car3.speed) #결과: 0
 
 
-#is instance(인스턴스명, 클래스명) : 특정 클래스의 인스턴스인지 확인
+#isinstance(인스턴스명, 클래스명) : 특정 클래스의 인스턴스인지 확인
 print(isinstance(car1, Car))
 #결과: True / 인스턴스 인지 확인하는 함수
 

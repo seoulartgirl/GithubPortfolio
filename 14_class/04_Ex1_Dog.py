@@ -1,7 +1,7 @@
 #실습.Dog Class 만들기
 class Dog:
     dog_id = 0 #class의 변수 / 전역변수가 됨
-    def __init__(self, name, breed, size, age, color):
+    def __init__(self, name='', breed='', size='', age=0, color=''):
         self.name = name
         self.breed = breed
         self.size = size

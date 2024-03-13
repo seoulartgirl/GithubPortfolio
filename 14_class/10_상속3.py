@@ -20,7 +20,7 @@ obj.greeting() #결과: 안녕하세요. B입니다
 
 #다이아몬드 상속: 서로 다른 클래스에서 동일한 메서드를 상속받는 경우
 #메서드를 탐색하는 순서 (Method Resolution Order: MRO)
-#왼쪽에서 오른쪽 순서로 메서드 탐색
+#클래스 다중 상속의 왼쪽에서 오른쪽 순서로 메서드 탐색
 
 print(D.mro())
 #결과: [<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>]

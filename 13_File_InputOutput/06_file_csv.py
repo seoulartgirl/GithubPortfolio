@@ -1,5 +1,6 @@
 #csv(comma separated value) 파일 읽기
 #csv 모듈 임포트
+# https://docs.python.org/ko/3/library/csv.html
 
 import csv
 
@@ -23,14 +24,15 @@ data_list = [['구', '전체', '내국인', '외국인'],
              ['강남구', 547602, 542498, 5014],
              ['송파구', 686181, 679247, 6934],
              ['강동구', 428547, 424235, 4312]]
+print(data_list)
 
-#wr
 with open('data/06_pop.csv', 'w', newline='') as f:
     obj = csv.writer(f, delimiter=',') #콤마로 구분
     obj.writerows(data_list) #한줄로 쭉 안나오고 나눠서 나옴
 
 def writecsv(filename, datalist, encoding):
-    with open(filename, 'w', newline='') as f:
+    with open(filename, 'w', encoding=encoding, newline='') as f:
         obj = csv.writer(f, delimiter=',')
         obj.writerows(data_list)
-writecsv()
+
+writecsv('data/pop1.csv', data_list, 'utf-8')

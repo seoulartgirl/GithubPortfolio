@@ -1,0 +1,58 @@
+3/13 수업내용
+
+크롤링 : 프로그램을 이용해서 자동으로 데이터를 수집
+크롤러
+
+robots.txt  :  
+
+1. 웹페이지 분석(파악) : 수집대상의 html 구조
+	태그 -> element
+	속성 : a 
+	선택자  : class, id
+
+2. 페이지 접근(요청)
+  url 접속 연결 -> 결과 가져옴
+
+  !pip install requests
+  requests.get(url, verify= False, headers = {'user-agents':' '})  
+   - SSL Certification Error 발생 시 verify=False 설정
+   - 봇으로 인식하여 거절할 경우 User-agents를 지정
+     user-agents : '브라우저 버전....  '
+
+  response = requests.get(url)
+  html = response.text
+
+  html = urllib.request.urlopen(url).read()
+  
+
+3. 파싱(parsing) : 추출
+   pip install beautifulsoup
+   soup = BeautifulSoup(html, 'html.parser')
+
+find(태그명, 속성)
+findAll()  find_all() => 리스트반환
+select(선택자) => 리스트반환
+soup객체.태그명
+soup.head  
+soup객체.find( ).next_siblings.
+
+
+모듈 임포트
+import requests
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+
+================
+주피터노트북 실행
+
+1. Anancoda 메뉴- Anaconda Prompt 선택
+
+(base) C:\users\username>cd \
+(base) C:\>jupyter notebook
+
+(base) C:\users\username>d:
+(base) D:\>jupyter notebook
+
+2.  Anancoda 메뉴- Jupyter notebook 클릭
+시작위치는 C:\users\username
+

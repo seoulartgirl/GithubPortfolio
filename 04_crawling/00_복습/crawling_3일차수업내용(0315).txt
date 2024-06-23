@@ -1,0 +1,30 @@
+3/15(금) 수업내용
+
+빅데이터 분석 (AI)
+
+파이썬 
+1. 데이터 수집 : DB , 웹 => OpenAPI, 크롤러(BeautifulSoup, Selenium webdirver)
+2. 데이터 저장 : DB  => 파이썬과 Mysql
+3. 데이터 처리(전처리) => Numpy, Pandas, 
+4. 데이터 탐색 (시각화) => Pandas, matlotlib.pyplot, Seaborn, folium
+5. 데이터 분석 : 모델링 => 전통적 통계적 분석기법들(표본을 추론)
+		=> 머신러닝(Machine Learning) : 기계학습 (딥러닝)
+
+6. 배포
+
+-----------------
+
+OpenAPI : 공공데이터포털, AI허브....
+  1) 데이터 활용 신청 (회원가입, 로그인, 인증키 발급)
+  2) 데이터 API url 준비
+     서비스 API 선택 : 요청형식 파악 => parameters 
+     기본url+서비스이름?파라미터들과 값들 
+      type=value&param2=value2&serviceKey=key
+  3) 서비스 API 접속 : requests.get() , urllib.request.urlopen()
+      요청(request)
+  4) 가져온 데이터 추출(parsing) : json, xml
+	response 형식을 파악
+        BeautifulSoup(xml, 'xml')
+  5) 데이터프레임 저장, 파일 저장
+
+     

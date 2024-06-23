@@ -1,0 +1,37 @@
+크롤링 단계
+
+1. 페이지 구조를 확인
+   정적페이지  => BeautifulSoup
+   동적페이지  => Selenium
+
+2. 페이지 연결(request)
+1) 정적페이지
+   response
+  html = requests.get(url, headers='user-agent: ', verify=False).text
+  html = urllib.request.urlopen(url).read()
+   
+2) 동적페이지
+   webdriver
+service = Service(executable_path=ChromDriverManager().install())
+driver = webdriver.Chrome(service=service) # 크롬드라이버 객체
+html = driver.get(url).page_source
+
+3. 파싱 (원하는 요소 추출)
+1) BeautifulSoup
+soup = BeautifulSoup(html, 'html.parser')
+soup.find() , soup.findAll(), soup.find_all(), soup.select()
+추출하는 객체의 컨텐츠 속성값들을 가져오기
+  => .text   .attrs  ['속성명']    a['href']   .get()
+
+2) Selenium
+find_element() , find_elements()
+By.TAG_NAME,  By.CSS_SELETOR, By.CLASS_NAME, BY.NAME, By.XPATH
+개발자관리도구에서 마우스 우클릭-copy에서 대상복사
+
+행동 함수 : click(), send_keys()
+자바스크립트 문장 실행 : execute_script(스크립트)
+
+html = driver.get(url).page_source
+
+
+

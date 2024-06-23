@@ -1,4 +1,4 @@
-# ZeroDivisionError
+# ZeroDivisionError : division by zero
 
 # 10/0 -> 0으로 나누려고 할때
 
@@ -43,3 +43,7 @@ print('%d%%'%c) #결과: 100%
 # FileNotFoundError: [Errno 2] No such file or directory: 'except.txt'
 with open('except.txt', 'r')as f:
     f.read()
+
+# OSError
+# with open('c:\file\except.txt','r') as f:
+#     f.read()

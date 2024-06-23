@@ -1,10 +1,11 @@
-#main
+# main
 
-name =('')
+name = ''
 def input_name():
     global name
-    name = input('이름입력:')
+    name = input('이름입력: ')
     print(f'__name__ : {__name__}')
+
 
 def get_name():
     print(f'__name__ : {__name__}')
@@ -12,6 +13,8 @@ def get_name():
         return 'noname'
     else:
         return name
+
+
 
 if __name__ == '__main__':
     # print(f'__name__ : {__name__}')

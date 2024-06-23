@@ -24,22 +24,22 @@ class Line(object):
     def __sub__(self, other):
         return self.length - other.length
 
-    def __lt__(self, other):
+    def __lt__(self, other): #less than other
         return self.length < other.length
 
-    def __gt__(self, other):
+    def __gt__(self, other): #greater than other
         return self.length > other.length
 
-    def __le__(self, other):
+    def __le__(self, other): #less or equal other
         return self.length <= other.length
 
-    def __ge__(self, other):
+    def __ge__(self, other): #greater than other
         return self.length >= other.length
 
-    def __eq__(self, other):
+    def __eq__(self, other): #equal
         return self.length == other.length
 
-    def __ne__(self, other):
+    def __ne__(self, other): #not equal
         return self.length != other.length
 
 line1 = Line(10)

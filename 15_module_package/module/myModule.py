@@ -6,3 +6,4 @@ def func2():
 
 def func3():
     print('myModule의 func3()함수 호출')
+

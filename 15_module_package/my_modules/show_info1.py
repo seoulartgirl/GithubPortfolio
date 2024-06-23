@@ -1,5 +1,5 @@
-def show_name():
-    print('홍길동2')
+def show_name1():
+    print('홍길동')
 
-def show_phone():
-    print('010-1234-12342')
+def show_phone1():
+    print('010-1234-1234')

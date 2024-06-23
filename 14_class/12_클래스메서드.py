@@ -3,7 +3,7 @@
 #   - @classmethod를 지정하여 사용
 
 class Person:
-    count = 0 #클래스 변수로 사용
+    count = 0 # 클래스 변수로 사용
 
     def __init__(self):
         Person.count += 1
@@ -12,7 +12,7 @@ class Person:
     def print_count(cls): #cls : 클래스를 의미
         print(f'{cls.count}명 태어났어요')
 
-    def create(selfcls): #생성자와 같은 메서드
+    def create(cls): #생성자와 같은 메서드
             p = cls() #Person()
             return p
 

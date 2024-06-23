@@ -31,17 +31,17 @@ print(dog2.dog_id) #결과: 2
 dog3 = Dog('뭉치', 'Mastiff', 'large', 5, 'black')
 print(dog3.dog_id) #결과: 3
 
-dog1.eat('rice')
-dog2.sleep()
-dog3.sit()
-dog1.run()
+dog1.eat('rice') #결과: "삐삐"이/가 "rice"를 먹는다
+dog2.sleep() #결과: "벤"이/가 잠잔다
+dog3.sit() #결과: "뭉치"이/가 앉아있다
+dog1.run() #결과: "삐삐"이/가 뛴다
 
-print(dog1)
-print(dog2)
+print(dog1) #결과: 삐삐의 품종은 Maltese, 나이는 2
+print(dog2) #벤의 품종은 Chow Chow, 나이는 3
 
-print(dog1.breed)
+print(dog1.breed) #결과: Maltese
 dog4 = Dog()
-print(dog4.dog_id)
+print(dog4.dog_id) #결과: 4
 
 # 인스턴스 변수: 인스턴스가 소유하고 있는 변수
 # 클래스 변수: 전역변수와 같이 클래스의 모든 인스턴스들이 공유하는 변수

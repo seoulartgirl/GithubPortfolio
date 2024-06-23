@@ -10,11 +10,16 @@ class Animal:
 class Cat(Animal):
     def talk(self):
         return 'Meow!'
+
 class Dog(Animal):
     def talk(self):
         return 'Woof Woof!'
 
-animals = [Cat('Missy'), Cat('Mr.Mistoffelees'), Dog('zion')]
+class Cow(Animal):
+    def talk(self):
+        return '음메'
+
+animals = [Cat('Missy'), Cat('Mr.Mistoffelees'), Dog('zion'), Cow('아지')]
 
 for animal in animals:
     print(animal.name + ': ' + animal.talk())
@@ -23,3 +28,4 @@ for animal in animals:
 # Missy: Meow!
 # Mr.Mistoffelees: Meow!
 # zion: Woof Woof!
+# 아지: 음메

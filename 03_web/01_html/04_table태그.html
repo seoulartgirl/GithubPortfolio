@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 태그들</title>
+</head>
+<body>
+    <!--border : 테이블 테두리 두께 설정-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>시간</th> <!--th 굵게 나옴-->
+                <th>월요일</th>
+                <th>화요일</th>
+                <th>수요일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <!--colspan: 옆 셀 합치기-->
+                <!--rowspan: 아래 셀 합치기-->
+                <td rowspan="2">영어</td>
+                <td>수학</td>
+                <td>기가</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>수학</td>
+                <td>미술</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td colspan="2">상담</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <!--연습문제-->
+    <h2>나의 일주일 시간표</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>요일</th>
+                <th>일요일</th>
+                <th>월요일</th>
+                <th>화요일</th>
+                <th>수요일</th>
+                <th>목요일</th>
+                <th>금요일</th>
+                <th>토요일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>06시-08시</th>
+                <td colspan="7">수영</td>
+            </tr>
+            <tr>
+                <th>08시-18시</th>
+                <td colspan="7">데이터공부</td>
+            </tr>
+            <tr>
+                <th>18시-20시</th>
+                <td colspan="7">식사/휴식</td>
+            </tr>
+            <tr>
+                <th>20시-22시</th>
+                <td colspan="7">숙면</td>
+            </tr>
+        </tbody>
+    </table>>
+
+</body>
+</html>

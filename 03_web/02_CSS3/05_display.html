@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 : 박스모델 display</title>
+    <style>
+        #none {display : none;}
+        #box {display : block;}
+        #inline {display : inline;
+            width: 100px; height:50px; margin:10px;}
+        #inline-block {display : inline-block;
+                        width: 150px; height:50px; margin:10px;}
+        .font-bold {font-weight: bold;}
+        .font-italic {font-style:italic;}
+        .font-center {text-align: center;}
+        .button {display: inline-block;
+                width: 150px; height:40px; background: #ff00A0;
+                border-radium : 10px; border: 5px solid #00ffff;
+                text-decoration : none;}
+
+    </style>
+</head>
+<body>
+    <h3>박스모델의 display 속성 제어</h3>
+    <p>display 속성: 태그가 화면에 보여지는 방식(박스유형)을 제어</p>
+    <ul>
+        <li>none: 화면에 보이지 않음</li>
+        <li>block: 블록박스 형식으로 지정, margin, padding 속성의 상하좌우를 지정할 수 있음</li>
+        <li>inline: inline 형식으로 지정, margin, padding 속성의 좌우만 지정할 수 있음</li>
+        <li>inline-block: 블록과 인라인의 중간 형식,
+                inline과 같이 배치하나 margin, padding 속성은 상하좌우 모두 지정할 수 있음</li>
+    </ul>
+    <hr>
+    <H3>display 속성 예제</H3>
+    <span id="box">더미 객체1</span>
+    <span id="inline-block">더미 객체2</span>
+    <div id="none">대상 객체</div>
+    <div id="inline">대상객체2</div>
+    <span>더미 객체3</span>
+    <div>대상객체3</div>
+    <hr>
+    <h3>글자 관련 속성 예제</h3>
+    <a class="font-bold font-italic font-center button" href="">로그인</a>
+</body>
+</html>

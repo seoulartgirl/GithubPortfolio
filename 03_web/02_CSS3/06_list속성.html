@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 : list속성</title>
+    <style>
+        #menu {
+        background : goldenrod;
+        padding: 10px 10px 10px 50px;
+        list-style-position:inside; /* inside | outside */
+        list-style-type : none;
+        /* list-style-image : url('media/apple.png'); */
+        /*disc | circle | square | decimal | alpha | lower-roman | upper-roman | none */
+        }
+        .item {/*background: yellowgreen;*/
+                margin: 5px;
+                color : white;
+                display : inline-block;}
+        li a {color: white; text-decoration: none;}
+        li a:hover {color : red;}
+    </style>
+</head>
+<body>
+    <h2>리스트 모양을 꾸미기 위한 속성</h2>
+    <ul>
+        <li>list-style : 마커타입, 마커이미지, 위치 지정</li>
+        <li>list-style-type: 아이템 마커(item marker) 타입 지정</li>
+        <li>list-style-image: 아이템 마커의 이미지 지정</li>
+        <li>list-style-position : 아이템 마커 출력 위치 지정(아이템 영역 내부 혹은 바깥)</li>
+    </ul>
+    <h3>리스트 꾸미기 예제</h3>
+    <p>커피메뉴</p>
+    <ul id="menu">
+        <li class="item"><a href="">아메리카노</a></li>
+        <li class="item"><a href="">카페모카</a></li>
+        <li class="item"><a href="">카푸치노</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>빅데이터</title>
+    <style>
+        /* body { font-family: 휴먼편지체, Arial, serif;} */
+        #title {text-align:center; nth-child(1) red;}
+        #title:first-letter {color: red;}
+        #content {border: 2px dotted #333333;
+                background-color: skyblue; padding: 5px 20px;
+                border-radius : 10px}
+        #contents>li:hover {background: yellow;}
+        .body-title {color: blue; font-weight: bold; text-shadow: 5px 3px 3px #dd2200}
+        footer {font-size: 12px; font-family: consolas; color:gray;}
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="title">빅데이터</h2>
+        <p>빅데이터(big data)란 기존 데이터베이스 관리도구의 능력을 넘어서는 대량(수십 테라바이트)의 정형
+            또는 심지어 데이터베이스의 형태가 아닌 비정형의 데이터 집합조차 포함함 데이터로부터 가치를
+            추출하고 결과를 분석하는 기술이다.</p>
+    </header>
+    <div id="content">
+        <h3>목차</h3>
+        <ol id="contents">
+            <li><a href="#1">정의</a></li>
+            <li><a href="#2">분석기술</a></li>
+            <li><a href="#3">표현기술</a></li>
+        </ol>
+    </div>
+    <div>
+        <h3 id='1' class="body-title">정의</h3>
+        <hr>
+        <p><strong>빅데이터</strong>는 통상적으로 사용되는 데이터 수집, 관리 및 처리 소프트웨어의
+        수용 한계를 넘어서는 크기의 데이터를 말한다.</p>
+        <ul>
+            <li>경영정보학은 대상을 측정하고 경향을 예측하는 등의 일을 하기 위해
+            고밀도의 데이터로 구성된 기술적 통계를 활용한다.</li>
+            <li><strong>빅데이터</strong>는 큰 데이터 집합으로부터 일전한 법칙을 추론하여 결과 및 행동을 예측하기 위해
+            통계적 추론과 비선형 시스템 식별의 일부 개념을 활용한다.</li>
+        </ul>
+    </div>
+    <div>
+        <h3 id='2' class="body-title">분석기술</h3>
+        <hr>
+        <p>기존 통계학과 전산학에서 사용되던 <strong>데이터 마이닝, 기계학습, 자연언어처리, 패턴인식</strong>등이 해당된다.</p>
+        <dt><strong>텍스트 마이닝:</strong></dt>
+        <dd>비/반정형 텍스트 데이터에서 자연언어처리 기술에 기반하여 유용한 정보를 추출 가공</dd>
+        <dt><strong>오피니언 마이닝:</strong></dt>
+        <dd>소셜미디어 등의 정형/비정형 텍스트의 긍정, 부정, 중립의 선호도를 판별</dd>
+        <dt><strong>소셜 네트워크 분석:</strong></dt>
+        <dd>소셜 네트워크의 연결 구조 및 강도 등을 바탕으로 사용자의 명성 및 영향력을 측정</dd>
+        <dt><strong>군집분석:</strong></dt>
+        <dd>비슷한 특징을 가진 개체를 합쳐가면서 최종적으로 유사 특성의 군집을 발굴</dd>
+    </div>
+    <div>
+        <h3 id='3' class="body-title">표현기술</h3>
+        <hr>
+        <p>데이터 분석 기술을 통해 분석된 데이터의 의미와 가치를 시각적으로 표현하기 위한 기술로 대표적인 것으로는
+            P, Matpolib, Seaborn, Plotly 등이 있다.</p>
+    </div>
+    <footer>
+        <a href="https://lc.multicampus.com/k-digital/">멀티캠퍼스 kdigital</a>
+        <p>copyright 2023 by Anonymous</p>
+    </footer>
+</body>
+</html>

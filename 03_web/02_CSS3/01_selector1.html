@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Selector Basic</title>
+    <style>
+        * { color: red; }
+        h2 { color : blue; }
+        p { color: green; }
+        p, h2, { margin: 10px;
+        padding : 10px; }
+        ul { background : yellow; }
+        #list { background : mistyrose; }
+        #listitem { color : black;}
+        .dt { font-size : 20px; color : blue;}
+        div>h2 { color : green; }
+        #section1 li { color : darkgray; }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>선택자</h1>
+    </div>
+    <div id="section1">
+    <h2>1. 전체 선택자 : * </h2>
+    <p>지금부터 스타일시트를 이용한 문서 표현 방법을 배워요</p>
+    <hr>
+    <h2>2. 태그 선택자 : 태그 이름</h2>
+    <p>태그 선택자는 태그 이름이 선택자로 사용되는 유형</p>
+    <p>태그 선택자와 같은 이름의 모든 태그에 CSS3 스타일 시트 내용 적용</p>
+    <hr>
+    <p>여러 개의 선택자에 동일한 스타일 속성을 지정할 경우, 선택자들은 쉼표로 구분</p>
+    <hr>
+    <h2>3. 아이디 선택자 : #id명</h2>
+    <p>요소의 id 속성으로 지정된 이름이 선택자가 되고 그 영역세 스타일을 지정</p>
+    <ul id="list">
+        <li id="listitem">HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ul>
+    <ul>
+        <li>웹프로그래밍</li>
+        <li>자료구조</li>
+    </ul>
+    <hr>
+    <h2>4. 클래스 선택자: .클래스명</h2>
+    <p>요소의 class 속성으로 지정된 영역에 스타일을 지정</p>
+    <dl>
+        <dt class="dt">변수</dt>
+        <dd>프로그래밍 언어에서 데이터값을 저장하는 메모리 공간을 의미함</dd>
+        <dt class="dt">연산자</dt>
+        <dd>파이썬의 연산자는 기본적으로 산술, 관계, 논리, 비트 연산자가 있음</dd>
+    </dl>
+    <dl>
+        <dt class="dt">id 속성</dt>
+        <dd>각 태그를 유일하게 구분</dd>
+        <dd>동일한 id 속성을 갖지 않음</dd>
+        <dd>아이디 선택자는 여러 태그 중 특정 태그에만 css스타일을 적용할 떄 사용</dd>
+        <dt class="dt">class 속성</dt>
+        <dd>여러 태그를 하나의 그룹으로 묶어 동일한 스타일을 적용하기 위해</dd>
+        <dd>클래스 속성을 여러 태그에 지정할 수 있음</dd>
+    </dl>
+    <hr>
+    </div>
+    <div id="section2">
+    <h2>5. 자식(child)선택자와 후손(descendent)선택자</h2>
+    <p>계층구조로 되어있는 HTML 태그 관계에서
+        부모와 자식 관계는 현재 태그를 포함하는 태그는 부모 태그가 되고 현재 태그는 자식 태그가 됨 </p>
+    <p>후손 태그는 자식을 포함하여 하위에 포함된 모든 태그들</p>
+    <ul>
+        <li>자식선택자: 부모선택자>자식선택자</li>
+        <li>후손선택자: 선조선택자 후손선택자</li>
+        <li>후손선택자: 선조선택자1 후손선택자1, 선조선택자2 후손선택자2</li>
+    </ul>
+    </div>
+    <hr>
+    <h2>선택자</h2>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Selector2</title>
+    <style>
+        h3:first-letter {color:red;}
+        .liTitle:hover {background : yellowgreen; }
+        li {list-style : none;}
+        li:first-child {border-radius: 10px 0 0 10px; }
+        /* li:nth-child(even) {background : #00ff03; } */
+        /* input 태그가 사용 불가할 때 */
+        input:disabled {background : yellow;}
+        /* input 태그가 사용 가능할 때 */
+        input:enabled {background: orange;}
+        /* input 태그에 포커스 되었을 때 */
+        input:focus {background: white;}
+        a:link {color : red;}
+        a:visited {color:blue;}
+        /* td:nth-child(1), th:nth-child(1) {background:yellow;} */
+        .title{background:yellow;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>선택자2</h2>
+    </div>
+    <div id="section">
+        <div id="article1">
+            <h3>6. 가상 클래스(pseudo-class) 선택자</h3>
+            <p>어떤 조건이나 상황에서 스타일을 적용하도록 하는 선택자</p>
+            <p>40개 이상의 많은 가상 클래스 선택자가 있음</p>
+            <ul>
+                <li class="liTitle">마우스
+                    <ul>
+                        <li>:hover => 마우스가 올라갈때 스타일 적용</li>
+                        <li>:active => 마우스로 누르고 있는 상황에서 스타일 적용</li>
+                    </ul>
+                </li>
+                <li class="liTitle">폼(form)요소
+                    <ul>
+                        <li>:focus => 폼 요소가 키보드나 마우스 클릭으로 포커스를 받을 때 스타일 적용</li>
+                        <li>:checked => 체크 상태의 input 태그에 스타일 적용</li>
+                        <li>:enabled => 사용 가능한 input 태그에 스타일 적용</li>
+                        <li>:disabled => 사용 불가능한 input 태그에 스타일 적용</li>
+                    </ul>
+                </li>
+                <li class="liTitle">하이퍼링크
+                    <ul>
+                        <li>:link => 방문하지 않은 링크에 스타일 적용</li>
+                        <li>:visited => 방문한 링크에 스타일 적용</li>
+                    </ul>
+                </li>
+                <li class="liTitle">블록 : p, div와 같은 블록형 태그
+                    <ul>
+                        <li>:first-letter => p, div와 같은 블록형 태그의 첫 글자에 스타일 적용</li>
+                        <li>:first-line => 블록형 태그의 첫 줄에 스타일 적용</li>
+                    </ul>
+                </li>
+                <li class="liTitle">구조
+                    <ul>
+                        <li>:nth-child(even) => 형제관계에서 짝수 번째 모든 태그에 스타일 적용</li>
+                        <li>:nth-child(odd) => 형제관계에서 홀수 번째 모든 태그에 스타일 적용</li>
+                        <li>:nth-child(숫자) => 형제관계에서 숫자번째 자식 태그에 스타일 적용</li>
+                        <li>:first-child => 형제관계에서 첫번째로 등장하는 태그에 스타일 적용</li>
+                        <li>:last-child => 형제관계에서 마지막으로 등장하는 태그에 스타일 적용</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div id="article2">
+            <h4>가상클래스 선택자 : 폼 요소의 상태 선택자</h4>
+            <form>
+                <label>아이디</label>
+                <input type="text" name="id">
+                <input disabled="disabled">
+            </form>
+        </div>
+        <hr>
+        <h4>가상 클래스 선택자: 하이퍼링크 선택자</h4>
+        <a href="https://www.naver.com">네이버</a>
+        <br>
+        <a href="https://www.daum.net">다음</a>
+    </div>
+    <div>
+        <div>웹 프로그래밍 <strong>학습내용</strong></div>
+         <ul>
+            <li><i>HTML</i></li>
+            <li><span>CSS3</span></li>
+            <li><em>JavaScript</em></li>
+         </ul>
+    </div>
+    <div class="warning">열심히 공부합시다. 평가시험 학격 기준은 60점 이상입니다.</div>
+    <hr>
+    <h2>선택자 연습</h2>
+    <p>시간표를 작성하여 첫번때 컬럼의 모든 배경을 노란색으로 변경하시오</p>
+    <table border="2">
+        <thead>
+            <tr>
+                <th class="title">시간</th>
+                <th>월요일</th>
+                <th>화요일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="title">10:00~</td>
+                <td rowspan="3">웹디자인</td>
+                <td rowspan="3">웹기초</td>
+            </tr>
+            <tr>
+                <td class="title">11:00~</td>
+            </tr>
+            <tr>
+                <td class="title">12:00~</td>
+            </tr>
+            <tr>
+                <td class="title">1:00~</td>
+                <td colspan="2">점심시간</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

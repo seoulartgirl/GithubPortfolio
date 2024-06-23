@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>입력양식 태그들</title>
+</head>
+<body>
+    <form>
+        <label>이름</label>
+        <br>
+        <input type="text">
+        <br>
+        <input type="radio">
+        <br>
+        <input type="checkbox">
+        <textarea></textarea>
+        <select></select>
+        <!--name은 변수, value는 값-->
+      </form>
+    <hr>
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+            <label for="name">이름: </label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form-example">
+            <label for="email">email: </label>
+            <input type="email" name="email" id="email" required />
+        </div>
+        <input type="hidden" name="hidden" value="hidden">
+        <br>
+        <input type="button" value="button">
+        <br>
+        <input type="file" name="file" value="file">
+        <br>
+        <input type="button" value="버튼">
+        <br>
+        <input type="reset">
+        <br>
+        <input type="image" src="http://placehold.it/100x100">
+        <br>
+        <input id="man" type="radio" name="gender" value="m">
+        <label for="man">남자</label>
+        <input id="woman" type="radio" name="gender" value="f">
+        <label for="woman">여자</label>
+        <div class="form-example">
+            <input type="submit" value="전송" />
+        </div>
+</form>
+
+</body>
+</html>

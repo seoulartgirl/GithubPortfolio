@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+    <style>
+        .div {
+        text-align:center;
+        background: yellowgreen;
+        width : 150px;
+        height : 80px;
+        /* margin: 10px; */
+        margin: 0 30px 0 30px; /* top right bottom left 순서 - 시계방향 */
+        /* padding: 20px; */
+        padding : 0 20px 0 20px; /* top right bottom left 순서 - 시계방향 */
+        padding: 20px 0px /*top&bottom right&left*/
+        border: 20px solid black;}
+
+    #thick { border : thick solid red;
+        padding: 5px;
+        margin: 3px; }
+    #dashed {border : dashed 2px gray;}
+    #solid {border : solid green;}
+
+    </style>
+</head>
+<body>
+    <h2>CSS3: 박스모델(box-model)과 속성</h2>
+    <div>
+        <p>박스모델의 구성요소</p>
+        <ul>
+            <li>content : HTML 태그의 텍스트나 이미지가 출력되는 부분</li>
+            <li>padding : 콘텐츠를 직접 둘러싸고 있는 내부 여백</li>
+            <li>border : 패딩 외부의 테두리</li>
+            <li>margin : 박스의 맨 바깥 영역</li>
+        </ul>
+    </div>
+    <div>
+        <p>박스모델의 속성</p>
+        <ul>
+            <li>contents와 관련된 속성 : width, height</li>
+            <li>padding과 관련된 속성: padding,
+                padding-top, padding-bottom, padding-left, padding-right</li>
+            <li>border와 관련된 속성: border 선의 모양, 선 굵기, 선 색상</li>
+                <ul>
+                    <li>border-width: border-top-width, -bottom-, -left-, -right-</li>
+                    <li>border-style: border-top-style, -bottom-, -left-, -right-</li>
+                    <li>border-color: border-top-color, -bottom-, -left-, -right-</li>
+                </ul>
+            <li>margin과 관련된 속성: margin, margin-top, margin-bottom, margin-left, margin-right</li>
+        </ul>
+    </div>
+    <hr>
+    <h3>박스모델 예시</h3>
+    <div class="div">
+        DIVDIVDIV
+    </div>
+    <hr>
+    <p>box 모델의 padding과 margin의 값 지정 방식</p>
+    <ul>
+        <li>margin : 값 => 위, 오른쪽, 아래, 왼쪽의 여백을 동일한 값으로 설정 </li>
+        <li>margin : 값1, 값2 => 위, 아래는 값1로, 오른쪽과 왼쪽은 값2로 설정 </li>
+        <li>margin : 값1, 값2, 값3, 값4 => 위, 오른쪽, 아래, 왼쪽의 여백 순으로 설정</li>
+    </ul>
+    <p>border-style속성의 값</p>
+    <P id="thick">border-width: thick</P>
+    <P id="dashed">border-style: dashed</P>
+    <P id="solid">border-style: solid</P>
+</body>
+</html>

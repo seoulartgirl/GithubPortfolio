@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 단위</title>
+    <style>
+        li:nth-child(1) {color : yellowgreen;}
+        li:nth-child(2) {font-size: 100%; color : RGB(138, 43, 226);}
+        li:nth-child(3) {font-size:1.2em;}
+        li:nth-child(4) {font-size:16pt; color : #8A00E2;}
+        li:nth-child(5) {font-size: 20px;}
+        div:nth-child(2) {background: URL('media/apple.png'); }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>CSS3 단위: 크기, 색상, URL</h2>
+        <p>글자단위: pt, cm, in, pc, px, deg <= 절대적 크기</p>
+        <p>글자단위: %, em <= 상대적 크기</p>
+        <p>색상단위: 색이름(140개) 예. blue, red, yellowgreen, .. </p>
+        <p>색상단위: 10진수 코드(0~255)와 RGB()함수로 표현 예. RGB(0,10,0)</p>
+        <p>색상단위: 16진수 코드 표현 #8A red / #8A2B green </p>
+        <p>
+            <ul>
+                <li><a href="http://www.colorpicker.com">color-picker</a></li>
+                <li><a href="https://www.webfx.com/web-design/color-picker/">WebFx color-picker</a></li>
+            </ul>
+        </p>
+        <p>URL 단위: 이미지나 글꼴 등 소스(파일)를 가리키는 문자열 URL('경로')</p>
+    </div>
+    <div>
+        <div>웹 프로그래밍 <strong>학습내용</strong></div>
+         <ul>
+            <li><i>HTML</i></li>
+            <li><span>CSS3</span></li>
+            <li><em>JavaScript</em></li>
+            <li>node.js</li>
+            <li>React</li>
+         </ul>
+    </div>
+</body>
+</html>

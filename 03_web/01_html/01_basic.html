@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- lang 속성 : 웹 페이지의 사용 언어를 (구글)검색 엔진에 제공 -->
+<head>
+    <!--
+    [<head>태그에 넣을 수 있는 태그들]
+    <meta>: 웹페이지에 추가 정보 전달 : 문자코드
+    <title>: 페이지 제목 지정
+    <script>: 자바스크립트 추가
+    <link>: 웹페이지에 파일 추가
+    <style>: css3(스타일시트) 추가
+    <base>: 페이지의 기본 경로 지정
+    -->
+    <meta charset="UTF-8">
+    <title>웹페이지기본</title>
+    <!-- css 내부스타일
+    <style>
+        h1 {
+        color : white;
+        background : orange;
+        }
+    </style>
+    -->
+    <!--css 외부 스타일-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--javascript 내부 스타일
+    // : 한줄주석 /* */ : 여러줄 주석
+    <script>
+        alert('경고!');
+    </script>
+    -->
+    <!--js 외부 스타일
+    <script src="sample.js">
+    </script>
+    -->
+    <script>
+    function show() { // <img>에 이미지 달기
+		    document.getElementById("fig").src = "img/apple.png"
+	    }
+	function hide() { // <img>에 이미지 제거
+		    document.getElementById("fig").src= "";
+	    }
+    </script>
+</head>
+<body>
+    <h1>Hello World</h1> <!-- 제목, 굵게-->
+    <p>지금은 html구조와 형식을 배우고 있어요</p>
+    html, css3 <br> Javascript
+    <h3 onmouseover="show()" onmouseout="hide()">사과</h3>
+    <div><img id="fig" src=""></div>
+</body>
+</html>
